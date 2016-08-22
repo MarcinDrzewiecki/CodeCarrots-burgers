@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Intro</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <style>
+      iframe {
+        margin: 0 auto;
+        width: 60vw;
+        height: 45vw;
+      }
+    </style>
+    <div class="xp-row with-comments">
+      <div class="xp-column">
+        <xp-editor active="index.py" >
+          <script id="index.py" type="application/octetstream" src="001/index.py" highlight></script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-column"></div>
+      <div class="xp-column">
+        <xp-preview runner="burger"></xp-preview>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>About Burgers</h1></header>
+        <details>
+          <h1>Burgers?</h1>
+          <ul>
+            <li>Burgers are awesome!</li>
+          </ul>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
+
+
